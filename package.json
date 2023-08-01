@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "env-cmd node src/server.js",
-    "dev": "env-cmd nodemon --ignore client.js src/server.js"
+    "dev": "env-cmd nodemon --ignore client.js src/server.js",
+    "local:up": "docker-compose -f docker-compose.local.yml up",
+    "local:down": "docker-compose -f docker-compose.local.yml down"
   },
   "author": "Sihoon Kim",
   "license": "ISC",
